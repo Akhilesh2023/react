@@ -20,5 +20,31 @@ console.log(square(5));
   return fullName.split(" ")[0];
 };*/
 
-const getFirstName = (fullName) => fullName.split(" ")[0];
+/*const getFirstName = (fullName) => fullName.split(" ")[0];
 console.log(getFirstName("Akhilesh Rana"));
+let count = 0;
+const addOne = () => {
+  count++;
+  renderCounterApp();
+};
+
+const minusOne = () => {
+  count--;
+  renderCounterApp();
+};
+const reset = () => {
+  count = 0;
+  renderCounterApp();
+};
+
+const renderCounterApp = () => {
+  const templateTwo = (
+    <div>
+      <h1>Count: {count}</h1>
+      <button onClick={addOne}>+1</button>
+      <button onClick={minusOne}>-1</button>
+      <button onClick={reset}>Reset</button>
+    </div>
+  );
+};
+renderCounterApp();*/
