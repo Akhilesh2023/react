@@ -40,8 +40,16 @@ class Counter extends React.Component{
     )
   }
 }
+const User=(props)=>{
+  return(
+    <div>
+      <p> Name:{props.name}</p>
+      <p> Age:</p>
+    </div>
+  )
+}
 
-ReactDOM.render(<Counter/>,document.getElementById('app'));
+ReactDOM.render(<User name="Akhilesh" age={26}/>,document.getElementById('app'));
 /*console.log("App.js is running!");
 
 const app = {
