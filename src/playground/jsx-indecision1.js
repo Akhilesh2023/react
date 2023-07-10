@@ -41,8 +41,8 @@ this.setState((prevState)=>{
     
   
   render() {
-    const title = "Indecision 1";
-    const subtitle = "indeceision 2";
+    const title = "Indecision";
+    const subtitle = "Put your life in hands of a computer";
   
 
     return (
@@ -107,7 +107,7 @@ class Options extends React.Component {
 class Option extends React.Component {
   constructor(props){
     super(props);
-    this.handleAddOption=this.handleAddOption.bind(this);
+    this.handleAddOption=this.handleAddOption.bind.(this);
     this.state={
       error:undefined
     };
@@ -133,12 +133,7 @@ class Option extends React.Component {
  
   }
 }
-const User = ()=>{
-return(
-  <div>
-   <H1> Name: </H1>
-   <h2> Age: </h2>
-  </div>
-);
-};
-ReactDOM.render(<User/>, document.getElementById("app"));
+
+
+
+ReactDOM.render(<IndecisionApp/>, document.getElementById("app"));

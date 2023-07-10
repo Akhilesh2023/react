@@ -1,3 +1,12 @@
+const obj={
+  name: 'Akhilesh',
+  getName(){
+    return this.name;
+  }
+}
+const getName=obj.getName.bind({name:'Akhilesh'});
+console.log(getName());
+
 class IndecisionApp extends React.Component{
   render(){
   const title='Indecision';
@@ -41,7 +50,12 @@ class Action extends React.Component{
 }
 
 class Options extends React.Component{
+  constructor(props){
+    super(props);
+    this.hanldeRemoveAll=this.hanldeRemoveAll.bind(this);
+  }
   hanldeRemoveAll(){
+console.log(this.props.options);
     alert('do you want to remove all?');
   }
   render(){
@@ -95,3 +109,4 @@ class AddOption extends React.Component{
 
 
 ReactDOM.render(<IndecisionApp />, document.getElementById('app'));
+
